@@ -5,3 +5,5 @@
 [![Build Status](https://travis-ci.org/lev33/project-lvl1-s474.svg?branch=master)](https://travis-ci.org/lev33/project-lvl1-s474)
 
 https://asciinema.org/a/mqmHhkZUTKXggZuvcSAotUUhD
+
+https://asciinema.org/a/9BBcxK9HN6JwYqPJERTlROD7k
