@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s474",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "brain-games project",
   "main": "",
   "scripts": {
@@ -15,6 +15,12 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "project",
+    "brain",
+    "games",
+    "hexlet"
   ],
   "author": "Lev A",
   "license": "ISC",

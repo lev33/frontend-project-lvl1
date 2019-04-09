@@ -1,5 +1,10 @@
 import readlineSync from 'readline-sync';
 
+const endOfGame = (answer, correctAnswer, name) => {
+  console.log('\x1b[31m', answer + '\x1b[0m', 'is wrong answer ;(. Correct answer was'+ '\x1b[31m', correctAnswer + '\x1b[0m','.');
+  console.log("Let" + '\x1b[31m', "'s try again, " + name + "!" + '\x1b[0m');
+};
+
 const calc = () => {
   console.log('Welcome to the Brain Games!');
   console.log('What is the result of the expression?');
@@ -19,29 +24,26 @@ const calc = () => {
     } else {
       console.log(`Question: ${num1} * ${num2}`);
     }
-      const actual = readlineSync.question('Your answer: ');
+      const answer = readlineSync.question('Your answer: ');
     if (oper < 1) {
-      if (Number(actual) === num1 + num2) {
+      if (Number(answer) === num1 + num2) {
         console.log('Correct!');
       } else {
-        console.log('\x1b[31m', actual + '\x1b[0m', 'is wrong answer ;(. Correct answer was'+ '\x1b[31m', String(num1 + num2) + '\x1b[0m','.');
-        console.log("Let" + '\x1b[31m', "'s try again, " + name + "!" + '\x1b[0m');
+        endOfGame(answer, String(num1 + num2), name);
         return;
       }
     } else if (oper < 2) {
-      if (Number(actual) === num1 - num2) {
+      if (Number(answer) === num1 - num2) {
         console.log('Correct!');
       } else {
-        console.log('\x1b[31m', actual + '\x1b[0m', 'is wrong answer ;(. Correct answer was' + '\x1b[31m', String(num1 - num2) + '\x1b[0m','.');
-        console.log("Let" + '\x1b[31m', "'s try again, " + name + "!" + '\x1b[0m');
+        endOfGame(answer, String(num1 - num2), name);
         return;      
       }
     } else {
-      if (Number(actual) === num1 * num2) {
+      if (Number(answer) === num1 * num2) {
         console.log('Correct!');
       } else {
-        console.log('\x1b[31m', actual + '\x1b[0m', 'is wrong answer ;(. Correct answer was' + '\x1b[31m', String(num1 * num2) + '\x1b[0m','.');
-        console.log("Let" + '\x1b[31m', "'s try again, " + name + "!" + '\x1b[0m');
+        endOfGame(answer, String(num1 * num2), name);
         return;      
       }
     }
