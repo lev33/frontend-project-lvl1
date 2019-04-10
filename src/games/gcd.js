@@ -1,6 +1,7 @@
+import greeting from '..';
 import { cons } from 'hexlet-pairs';
 
-const getRandom = () => Math.floor(Math.random() * 100);
+const getRandom = (a, b) => Math.floor(a + Math.random() * (b - a));
 
 const getGCD = (a, b) => {
   if (a === b) {
@@ -12,8 +13,16 @@ const getGCD = (a, b) => {
 };
 
 const gcd = () => {
-  const question1 = getRandom() + 1;
-  const question2 = getRandom() + 1;
-  return cons(`${question1} ${question2}`, String(getGCD(question1, question2)));
+  const num1 = getRandom(1, 100);
+  const num2 = getRandom(1, 100);
+  const question = `${num1} ${num2}`;
+  const rightAnswer = getGCD(num1, num2);
+  return cons(question, String(rightAnswer));
 };
+
+export const startGCD = () => {
+  const rules = 'Find the greatest common divisor of given numbers.';
+  greeting(gcd, rules);
+};
+
 export default gcd;

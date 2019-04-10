@@ -1,18 +1,22 @@
+import greeting from '..';
 import { cons } from 'hexlet-pairs';
 
-const getRandom = () => Math.floor(Math.random() * 100);
+const getRandom = (a, b) => Math.floor(a + Math.random() * (b - a));
+
+const oper = ['+', '-', '*'];
 
 const calc = () => {
-  const num1 = getRandom();
-  const num2 = getRandom();
-  const oper = getRandom();
-  if (oper < 34) {
-    return cons(`${num1} + ${num2}`, String(num1 + num2));
-  }
-  if (oper < 67) {
-    return cons(`${num1} - ${num2}`, String(num1 - num2));
-  }
-  return cons(`${num1} * ${num2}`, String(num1 * num2));
+  const num1 = getRandom(0, 100);
+  const num2 = getRandom(0, 100);
+  const currentOper = oper[getRandom(0, oper.length)];
+  const question = `${num1} ${currentOper} ${num2}`;
+  const rightAnswer = eval(question);
+  return cons(question, String(rightAnswer));
+};
+
+export const startCalc = () => {
+  const rules = 'What is the result of the expression?';
+  greeting(calc, rules);
 };
 
 export default calc;
