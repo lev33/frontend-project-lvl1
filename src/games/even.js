@@ -1,13 +1,14 @@
-import readlineSync from 'readline-sync';
 import { cons } from 'hexlet-pairs';
 
+const isEven = number => number % 2;
+
+const getRandom = () => Math.floor(Math.random() * 100);
+
 const even = () => {
-  const question = Math.floor(Math.random() * 100);
-  console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
-  if (question % 2 === 0) {
-    return cons(answer, 'yes');
+  const question = getRandom();
+  if (!isEven(question)) {
+    return cons(`${question}`, 'yes');
   }
-  return cons(answer, 'no');
+  return cons(`${question}`, 'no');
 };
 export default even;

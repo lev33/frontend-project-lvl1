@@ -1,23 +1,19 @@
-import readlineSync from 'readline-sync';
 import { cons } from 'hexlet-pairs';
+
+const getRandom = () => Math.floor(Math.random() * 100);
 
 const getGCD = (a, b) => {
   if (a === b) {
     return a;
   }
-  if (a > b) {
-    const tmp = a;
-    a = b;
-    b = tmp;
-  }
-  return getGCD(a, b - a);
+  const c = (a > b) ? b : a;
+  const d = (a > b) ? a : b;
+  return getGCD(c, d - c);
 };
 
 const gcd = () => {
-  const question1 = Math.floor(Math.random() * 100) + 1;
-  const question2 = Math.floor(Math.random() * 100) + 1;
-  console.log(`Question: ${question1} ${question2}`);
-  const answer = readlineSync.question('Your answer: ');
-  return cons(answer, String(getGCD(question1, question2)));
+  const question1 = getRandom() + 1;
+  const question2 = getRandom() + 1;
+  return cons(`${question1} ${question2}`, String(getGCD(question1, question2)));
 };
 export default gcd;
