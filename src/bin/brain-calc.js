@@ -2,4 +2,4 @@
 import greeting from '..';
 import calc from '../games/calc.js';
 
-greeting(calc);
+greeting(calc, 'What is the result of the expression?');

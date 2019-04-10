@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s474",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "brain-games project",
   "main": "",
   "scripts": {
@@ -36,6 +36,7 @@
     "eslint-plugin-import": "^2.16.0"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.8",
     "readline-sync": "^1.4.9"
   }
 }

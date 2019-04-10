@@ -2,4 +2,4 @@
 import greeting from '..';
 import even from '../games/even.js';
 
-greeting(even);
+greeting(even, 'Answer "yes" if number even otherwise answer "no"');
