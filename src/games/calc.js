@@ -1,5 +1,5 @@
-import greeting from '..';
 import { cons } from 'hexlet-pairs';
+import { startGame } from './funcs';
 
 const getRandom = (a, b) => Math.floor(a + Math.random() * (b - a));
 
@@ -14,9 +14,9 @@ const calc = () => {
   return cons(question, String(rightAnswer));
 };
 
-export const startCalc = () => {
+export const start = () => {
   const rules = 'What is the result of the expression?';
-  greeting(calc, rules);
+  startGame(calc, rules);
 };
 
 export default calc;

@@ -1,5 +1,5 @@
-import greeting from '..';
 import { cons } from 'hexlet-pairs';
+import { startGame } from './funcs';
 
 const getRandom = (a, b) => Math.floor(a + Math.random() * (b - a));
 
@@ -20,9 +20,9 @@ const gcd = () => {
   return cons(question, String(rightAnswer));
 };
 
-export const startGCD = () => {
+export const start = () => {
   const rules = 'Find the greatest common divisor of given numbers.';
-  greeting(gcd, rules);
+  startGame(gcd, rules);
 };
 
 export default gcd;
