@@ -17,8 +17,8 @@ const generateData = () => {
   const num1 = getRandom(1, 100);
   const num2 = getRandom(1, 100);
   const question = `${num1} ${num2}`;
-  const rightAnswer = getGCD(num1, num2);
-  return cons(question, String(rightAnswer));
+  const rightAnswer = String(getGCD(num1, num2));
+  return cons(question, rightAnswer);
 };
 
 export default () => generateGame(generateData, description);
