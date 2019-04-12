@@ -12,13 +12,14 @@ const generateGame = (generateData, description) => {
 
   for (let i = 0; i < numberOfSteps; i += 1) {
     const result = generateData();
-    console.log(`Question: ${car(result)}`);
-    const answer = readlineSync.question('Your answer: ');
+    const question = car(result);
     const rigthAnswer = cdr(result);
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question('Your answer: ');
     if (answer === rigthAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`\x1b[31m${answer}\x1b[0m is wrong answer ;(. Correct answer was \x1b[31m${rigthAnswer}\x1b[0m.`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }

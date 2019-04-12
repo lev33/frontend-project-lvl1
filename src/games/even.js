@@ -7,10 +7,10 @@ const description = 'Answer "yes" if number even otherwise answer "no".';
 const isEven = number => number % 2;
 
 const generateData = () => {
-  const num = getRandom(1, 100);
-  const question = `${num}`;
-  const rightAnswer = isEven(num) ? 'no' : 'yes';
-  return cons(question, rightAnswer);
+//  const num = getRandom(1, 100);
+  const number = getRandom(1, 100);
+  const rightAnswer = isEven(number) ? 'no' : 'yes';
+  return cons(number, rightAnswer);
 };
 
 export default () => generateGame(generateData, description);

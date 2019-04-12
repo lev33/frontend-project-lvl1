@@ -22,10 +22,9 @@ const isPrime = (number) => {
 };
 
 const generateData = () => {
-  const num = getRandom(1, 100);
-  const question = `${num}`;
-  const rightAnswer = isPrime(num) ? 'yes' : 'no';
-  return cons(question, rightAnswer);
+  const number = getRandom(1, 100);
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
+  return cons(number, rightAnswer);
 };
 
 export default () => generateGame(generateData, description);
