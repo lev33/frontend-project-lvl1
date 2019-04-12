@@ -4,24 +4,23 @@ import getRandom from '../utils';
 
 const description = 'What number is missing in the progression?';
 
-const lengthOfProgression = 10;
+const length = 10;
 
 const generateData = () => {
-  const startOfProgression = getRandom(1, 10);
-  const stepOfProgression = getRandom(1, 10);
-  const indexOfMissingElement = getRandom(0, lengthOfProgression - 1);
+  const startIndex = getRandom(1, 10);
+  const step = getRandom(1, 10);
+  const indexOfMissingElement = getRandom(0, length - 1);
   let progression = '';
-  let cuurentElement;
-  for (let i = 0; i < lengthOfProgression; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     if (i === indexOfMissingElement) {
       progression = progression.concat(' ..');
     } else {
-      cuurentElement = startOfProgression + i * stepOfProgression;
-      progression = progression.concat(' ', cuurentElement);
+      const currentElement = startIndex + i * step;
+      progression = progression.concat(' ', currentElement);
     }
   }
-  const question = `${progression}`;
-  const rightAnswer = String(startOfProgression + indexOfMissingElement * stepOfProgression);
+  const question = progression;
+  const rightAnswer = String(startIndex + indexOfMissingElement * step);
   return cons(question, rightAnswer);
 };
 
