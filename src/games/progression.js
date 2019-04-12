@@ -7,7 +7,7 @@ const description = 'What number is missing in the progression?';
 const length = 10;
 
 const generateData = () => {
-  const startIndex = getRandom(1, 10);
+  const start = getRandom(1, 10);
   const step = getRandom(1, 10);
   const indexOfMissingElement = getRandom(0, length - 1);
   let progression = '';
@@ -15,12 +15,12 @@ const generateData = () => {
     if (i === indexOfMissingElement) {
       progression = progression.concat(' ..');
     } else {
-      const currentElement = startIndex + i * step;
+      const currentElement = start + i * step;
       progression = progression.concat(' ', currentElement);
     }
   }
   const question = progression;
-  const rightAnswer = String(startIndex + indexOfMissingElement * step);
+  const rightAnswer = String(start + indexOfMissingElement * step);
   return cons(question, rightAnswer);
 };
 
