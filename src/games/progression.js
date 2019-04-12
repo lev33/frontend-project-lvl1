@@ -9,7 +9,7 @@ const lengthOfProgression = 10;
 const generateData = () => {
   const startOfProgression = getRandom(1, 10);
   const stepOfProgression = getRandom(1, 10);
-  const indexOfMissingElement = getRandom(1, 10);
+  const indexOfMissingElement = getRandom(0, lengthOfProgression - 1);
   let progression = '';
   let cuurentElement;
   for (let i = 0; i < lengthOfProgression; i += 1) {
