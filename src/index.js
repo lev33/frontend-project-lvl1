@@ -19,7 +19,7 @@ const generateGame = (generateData, description) => {
       console.log('Correct!');
     } else {
       console.log(`\x1b[31m${answer}\x1b[0m is wrong answer ;(. Correct answer was \x1b[31m${rigthAnswer}\x1b[0m.`);
-      console.log(`Let\x1b[31m's try again, ${name}! \x1b[0m`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }

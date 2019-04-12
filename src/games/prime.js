@@ -2,16 +2,16 @@ import { cons } from 'hexlet-pairs';
 import generateGame from '..';
 import getRandom from '../utils';
 
-const description = 'Answer \x1b[31m"yes"\x1b[0m if given number is prime. Otherwise answer \x1b[31m"no"\x1b[0m.';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number < 4) {
+  if (number === 2 || number === 3 || number === 5) {
     return true;
   }
-  if (number % 2 === 0) {
+  if (number < 2 || number % 2 === 0) {
     return false;
   }
-  if (number > 8) {
+  if (number > 6) {
     for (let i = 3; i < number / 2; i += 2) {
       if (number % i === 0) {
         return false;
@@ -22,11 +22,10 @@ const isPrime = (number) => {
 };
 
 const generateData = () => {
-  const question = getRandom(1, 100);
-  if (isPrime(question)) {
-    return cons(`${question}`, 'yes');
-  }
-  return cons(`${question}`, 'no');
+  const num = getRandom(1, 100);
+  const question = `${num}`;
+  const rightAnswer = isPrime(num) ? 'yes' : 'no';
+  return cons(question, rightAnswer);
 };
 
 export default () => generateGame(generateData, description);

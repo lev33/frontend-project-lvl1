@@ -2,16 +2,15 @@ import { cons } from 'hexlet-pairs';
 import generateGame from '..';
 import getRandom from '../utils';
 
-const description = 'Answer \x1b[31m"yes"\x1b[0m if number even otherwise answer \x1b[31m"no"\x1b[0m.';
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const isEven = number => number % 2;
 
 const generateData = () => {
-  const question = getRandom(1, 100);
-  if (!isEven(question)) {
-    return cons(`${question}`, 'yes');
-  }
-  return cons(`${question}`, 'no');
+  const num = getRandom(1, 100);
+  const question = `${num}`;
+  const rightAnswer = isEven(num) ? 'no' : 'yes';
+  return cons(question, rightAnswer);
 };
 
 export default () => generateGame(generateData, description);
