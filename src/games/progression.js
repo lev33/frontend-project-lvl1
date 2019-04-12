@@ -12,7 +12,7 @@ const generateData = () => {
   const indexOfMissingElement = getRandom(1, 10);
   let progression = '';
   let cuurentElement;
-  for (let i = 1; i < lengthOfProgression; i += 1) {
+  for (let i = 0; i < lengthOfProgression; i += 1) {
     if (i === indexOfMissingElement) {
       progression = progression.concat(' ..');
     } else {
