@@ -17,31 +17,20 @@ npm install -g brain-games-s474
 
 #### brain-even
 
-<script id="asciicast-xzktzMdgOlcuRaLTK0QOJjCCq" src="https://asciinema.org/a/xzktzMdgOlcuRaLTK0QOJjCCq.js" data-cols="100" data-rows="15" data-preload="1" async></script>
+[![asciicast](https://asciinema.org/a/OKiWhyG8Sy6hdxXvpkbVsOeSc.svg)](https://asciinema.org/a/OKiWhyG8Sy6hdxXvpkbVsOeSc)
 
 #### brain-calc
 
-<script id="asciicast-ukdMNMfPjqXEhQdMAgdARHQMs" src="https://asciinema.org/a/ukdMNMfPjqXEhQdMAgdARHQMs.js" async></script>
+[![asciicast](https://asciinema.org/a/r4RQncaL8tbMwHJITxrFGTDKC.svg)](https://asciinema.org/a/r4RQncaL8tbMwHJITxrFGTDKC)
 
 #### brain-gcd
 
-<script id="asciicast-5Vyx4fLOKpAfVNyGs0Rsgp8dj" src="https://asciinema.org/a/5Vyx4fLOKpAfVNyGs0Rsgp8dj.js" async></script>
+[![asciicast](https://asciinema.org/a/UevlKSBy6L0GuF59SbyuQHrop.svg)](https://asciinema.org/a/UevlKSBy6L0GuF59SbyuQHrop)
 
 #### brain-progression
 
-<script id="asciicast-9BBcxK9HN6JwYqPJERTlROD7k" src="https://asciinema.org/a/9BBcxK9HN6JwYqPJERTlROD7k.js" data-cols="100" data-rows="15" data-preload="1" async></script>
+[![asciicast](https://asciinema.org/a/SUTqxCc3b4hfgncMP5XEDNctm.svg)](https://asciinema.org/a/SUTqxCc3b4hfgncMP5XEDNctm)
 
 #### brain-prime
 
-<script id="asciicast-7vERxAgJIAKirrwlPyQDeJdGQ" src="https://asciinema.org/a/7vERxAgJIAKirrwlPyQDeJdGQ.js" async></script>
-
-
-https://asciinema.org/a/7vERxAgJIAKirrwlPyQDeJdGQ
-
-https://asciinema.org/a/9BBcxK9HN6JwYqPJERTlROD7k
-
-https://asciinema.org/a/5Vyx4fLOKpAfVNyGs0Rsgp8dj
-
-https://asciinema.org/a/ukdMNMfPjqXEhQdMAgdARHQMs
-
-https://asciinema.org/a/xzktzMdgOlcuRaLTK0QOJjCCq
+[![asciicast](https://asciinema.org/a/aZ4IbLI90ohRs1BVfwWyDo7z4.svg)](https://asciinema.org/a/aZ4IbLI90ohRs1BVfwWyDo7z4)

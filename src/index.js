@@ -3,7 +3,7 @@ import { car, cdr } from 'hexlet-pairs';
 
 const numberOfSteps = 3;
 
-const generateGame = (generateData, description) => {
+const playGame = (generateData, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
   console.log('');
@@ -26,4 +26,4 @@ const generateGame = (generateData, description) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-export default generateGame;
+export default playGame;
