@@ -17,7 +17,7 @@ npm install -g brain-games-s474
 
 #### brain-even
 
-<script id="asciicast-xzktzMdgOlcuRaLTK0QOJjCCq" src="https://asciinema.org/a/xzktzMdgOlcuRaLTK0QOJjCCq.js" async></script>
+<script id="asciicast-xzktzMdgOlcuRaLTK0QOJjCCq" src="https://asciinema.org/a/xzktzMdgOlcuRaLTK0QOJjCCq.js" data-cols="100" data-rows="15" data-preload="1" async></script>
 
 #### brain-calc
 
@@ -29,7 +29,7 @@ npm install -g brain-games-s474
 
 #### brain-progression
 
-<script id="asciicast-9BBcxK9HN6JwYqPJERTlROD7k" src="https://asciinema.org/a/9BBcxK9HN6JwYqPJERTlROD7k.js" async></script>
+<script id="asciicast-9BBcxK9HN6JwYqPJERTlROD7k" src="https://asciinema.org/a/9BBcxK9HN6JwYqPJERTlROD7k.js" data-cols="100" data-rows="15" data-preload="1" async></script>
 
 #### brain-prime
 

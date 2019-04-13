@@ -19,7 +19,7 @@ const generateGame = (generateData, description) => {
     if (answer === rigthAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${rigthAnswer}.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rigthAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
